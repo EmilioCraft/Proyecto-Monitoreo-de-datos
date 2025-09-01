@@ -55,7 +55,14 @@
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
                         <asp:BoundField DataField="Modelo" HeaderText="Modelo" />
                         <asp:BoundField DataField="NumeroSerie" HeaderText="Número de Serie" />
-                        <asp:BoundField DataField="Imagen" HeaderText="Imagen" />
+                        <asp:TemplateField HeaderText="Imagen">
+                            <ItemTemplate>
+                                <asp:Image ID="imgComponente" runat="server" 
+                                    ImageUrl='<%# Eval("Imagen") %>' 
+                                    CssClass="img-thumbnail" 
+                                    Width="100" Height="100" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                         <asp:TemplateField HeaderText="Acciones">
                             <ItemTemplate>
                                 <asp:Button ID="accionEditar" runat="server" Text="Editar" CssClass="btn btn-warning btn-sm me-1" OnClick="accionEditar_Click" />
