@@ -59,5 +59,15 @@ namespace Tarea1
                 gvInventario.DataBind();
             }
         }
+
+        protected void accionEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void accionElminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

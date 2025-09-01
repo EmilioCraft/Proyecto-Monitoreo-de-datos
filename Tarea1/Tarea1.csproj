@@ -99,6 +99,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap.min %284%29.css" />
     <Content Include="Inventario.aspx" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
