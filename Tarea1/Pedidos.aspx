@@ -12,13 +12,16 @@
             <h3>Pedidos</h3>
     </div>
     <div class="card-body">
+           <div>
+       <asp:HiddenField ID="HiddenFieldID" runat="server" />
+  </div>
         <div class="mb-3">
             <asp:Label ID="lblDropdown" runat="server" Text="Selecciona el componente" CssClass="form-label"></asp:Label>
             <asp:DropDownList ID="ddlComponentes" runat="server" class="form-select"></asp:DropDownList><br />
         </div>
         <div class="mb-3">
             <asp:Label ID="lblCantidad" runat="server" Text="Cantidad" CssClass="form-label"></asp:Label>
-            <asp:TextBox ID="txtCantidad" runat="server" Placeholder="Cantidad" CssClass="form-control"></asp:TextBox><br />
+            <asp:TextBox ID="txtCantidad" runat="server" Placeholder="Cantidad" CssClass="form-control" TextMode="Number"></asp:TextBox><br />
         </div>
         <div class="mb-3">
             <asp:Label ID="lblFecha" runat="server" Text="Fecha" CssClass="form-label"></asp:Label>
